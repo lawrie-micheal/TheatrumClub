@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Theatrum Club</title>
+
+	<style type="text/css">
+
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.head1 {
+			background-color: black;
+		}
+
+		li:hover {
+			opacity: 0.7;
+		}
+
+		li {
+			display: inline-flex;
+			color: white;
+			margin: 0px 10px -10px 20px;
+			padding: 0px;  			
+  			float: left;
+  			font-size: 20px;
+  			overflow: hidden;
+		}
+
+		ul {
+			list-style-type: none;
+			margin-top: -42px;
+			margin-left: 40px;
+			padding-bottom: 35px;
+			position: relative;
+			top: -178px;
+			left: 580px;
+		}	
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.search {
+			position: relative;
+			top: -200px;
+			left: 350px;
+			font-size: 30px;
+		}
+
+
+
+		#char {
+			border-radius: 10px;
+			height: 20px;
+		}
+
+		.logo {
+			height: 200px;
+			width: 100%;
+		}
+
+		.head2 {
+			font-size: 25px;
+			color: white;
+			width: 500px;
+			height: 150px;
+			margin-top: 10px;
+		}
+
+		#h1 {
+			padding: 10px;
+			font-size: 30px;
+		}
+
+		.about1 {
+			background-color: white;
+			width: 55%;
+			font-size: 20px;
+			text-align: justify;
+			padding: 10px;
+			margin-top: -150px;
+			border-radius: 20px;
+		}
+
+		#p1 {
+			padding: 10px;
+		}
+
+		body {
+			background-color: black;
+		}
+
+		.about2 {
+			background-color: white;
+			width: 55%;
+			font-size: 20px;
+			text-align: justify;
+			padding: 10px;
+			margin-top: 50px;
+			border-radius: 20px;
+			height: 350px;
+		}
+
+		.mapouter {
+			position:relative;
+			left: 100px;
+			text-align:center;
+			width:675px;
+			height:273px;
+		}
+
+		.gmap_canvas {
+			overflow:hidden;
+			background:none!important;
+			width:675px;
+			height:273px;
+			border-radius: 20px;
+		}
+		.gmap_iframe {
+			width:675px!important;
+			height:273px!important;
+		}
+
+		.h2 {
+			padding: 10px;
+			font-size: 20px;
+		}
+
+		.about3 {
+			background-color: white;
+			width: 55%;
+			font-size: 20px;
+			text-align: justify;
+			padding: 10px;
+			margin-top: 50px;
+			border-radius: 20px;
+			height: 350px;
+			margin-bottom: 29px;
+		}
+
+		.images3 {
+			display: flex;
+			height:190px;
+			width:190px;
+			padding: 10px;
+		}
+
+		.image4 {
+			height:190px;
+			width:190px;
+			padding-left: 10px;
+			display: flex;
+			position: relative;
+			left: 170px;
+			top: -110px;
+		}
+
+		.image5 {
+			height:190px;
+			width:190px;
+			padding-left: 10px;
+			display: flex;
+			position: relative;
+			left: 550px;
+			top: -390px;
+		}
+
+		.image6 {
+			height:150px;
+			width:100px;
+			padding-left: 10px;
+			display: flex;
+			position: relative;
+			left: 317px;
+			top: -600px;
+		}
+
+		.about4 {
+			background-color: white;
+			width: 55%;
+			font-size: 20px;
+			text-align: justify;
+			padding: 10px;
+			margin-top: 50px;
+			border-radius: 20px;
+			height: 170px;
+			margin-bottom: 50px;
+
+		}
+
+		.media {
+			display: flex;
+		}
+
+		.fa:hover {
+		    opacity: 0.7;
+		}
+
+		.fa {
+		  padding: 20px;
+		  font-size: 30px;
+		  width: 30px;
+		  text-align: center;
+		  text-decoration: none;
+		  border-radius: 50%;
+		}
+
+		.fa-facebook {
+			background-color: none;
+			color: black;
+			position: relative;
+			left: 50px;
+			border: 1px solid black;
+		}
+
+		.fa-twitter {
+			background-color: none;
+			color: black;
+			position: relative;
+			left: 170px;
+			border: 1px solid black;
+		}
+
+		.fa-youtube {
+			background-color: none;
+			color: black;
+			position: relative;
+			left: 300px;
+			border: 1px solid black;
+		}
+
+		.fa-instagram {
+			background-color: none;
+			color: black;
+			position: relative;
+			left: 400px;
+			border: 1px solid black;
+		}
+
+		h3 {
+			padding: 15px;
+		}
+
+		.chart {
+			background-color: white;
+			width: 55%;
+			font-size: 20px;
+			text-align: justify;
+			padding: 10px;
+			margin-top: 50px;
+			border-radius: 20px;
+			height: 350px;
+			margin-bottom: 29px;
+		}
+
+		#image7 {
+			width: 700px;
+			height: 300px;
+			position: relative;
+			left: 100px;
+		}
+
+		.slideshow {
+		    position: relative;
+		    width: 50%;
+		    overflow: hidden;
+		    bottom: 190px;
+		    border-radius: 20px;
+		}
+
+		.slides {
+		    display: flex;
+		    animation: slidingAction 40s infinite;
+
+		}
+
+		 @keyframes slidingAction {
+            0% { transform: translateX(0); }
+            10% { transform: translateX(-100%); }
+            20% { transform: translateX(-200%); }
+            30% { transform: translateX(-300%); }
+            
+        }
+
+		#slide1, #slide2, #slide3 {
+			height: 300px;
+			width: 800px;
+			padding-left: 100%;
+
+		}
+
+		.slidefade {
+			width: 100%;
+		}
+
+
+
+
+
+
+		
+
+	</style>
+
+
+</head>
+<body>
+<center>
+	<div class= "head1">
+		<div class="head2">
+			<h1>Theatrum Club Organization</h1>
+		</div>
+
+		<div class="logo">
+			<img class="image2" src="theatrum-removebg-preview%20(1).png" style="width: 200px; height: 200px; float: left; margin-top: -100px;">
+			<img class="image3" src="theatrum-removebg-preview%20(1).png" style="width: 200px; height: 200px; float: right; margin-top: -100px;">
+		</div>
+
+		<ul>
+  			<li><a href="It-project.html.html">Home</a></li>
+  			<li><a href="IT-PROJECT_design_Orain%20(1).html">Club Members</a></li>
+  			<li><a href="mainlogin-page.html">Log Out</a></li>
+		</ul>
+
+		<div class="search">
+			<input id="char" type="text" placeholder="Search..." name="Search">
+		</div>
+
+	</div>	
+
+	<div class="slideshow">
+	    <div class="slides">
+	        <div class="slidefade">
+	            <img src="theatrum-removebg-preview%20(1).png" alt="Image 1" id="slide1">
+	        </div>
+	        <div class="slidefade">
+	            <img src="images%20(3).jpg" alt="Image 2" id="slide2">
+	        </div>
+	        <div class="slidefade">
+	            <img src="2019-11-bfa-vs-ba-theater.jpg" alt="Image 3" id="slide3">
+	        </div>
+	    </div>
+    </div>
+
+	<div class="about1">
+		<h1 id="h1">About Us</h1>
+		<p id="p1">At Theatrum club, we are passionate about shaping our members into Passionate, Kind and Confident actors. Our journey began in 2024 with a vision to inspire the youth into shaping themselves into who they are. Since then, we have committed ourselves to help the youth and their skills so that they may live with a nice and dependent skills in the world of theater play.</p>
+	</div>
+
+	<div class="chart">
+		<h2>Chart</h2>
+		<img src="26.11.2024_14.21.26_REC%20(1).png" id="image7">
+	</div>
+
+	<div class="about2">
+		<div class="h2">
+			<h2>Location</h2>
+		</div>
+
+		<div class="mapouter">	
+			<div class="gmap_canvas">	
+				<iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=675&amp;height=273&amp;hl=en&amp;q=Cagayan de Oro City&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div class="about3">
+		<h2>Performances</h2>
+
+		<div class="images3">
+			<img src="pic5.jpg">
+		</div>
+
+		<div class="image4">
+			<img src="pic3.jpg">
+		</div>
+
+		<div class="image5">
+			<img src="pic1.webp">
+		</div>
+
+		<div class="image6">
+			<img src="pic2.jfif">
+		</div>
+	</div>
+
+
+	<div class="about4">
+		<h3>Contact Us</h3>
+
+		<div class="media">
+			<div class="med1">
+				<a href="#" class="fa fa-facebook"></a>
+				<p style="color: black; font-size: 18px; position: relative; top: -45px; left: 130px;">Theatrum</p>
+			</div>
+			<div class="med2">
+				<a href="#" class="fa fa-twitter"></a>
+				<p style="color: black; font-size: 18px; position: relative; top: -45px; left: 260px;">@TheaTrum</p>
+			</div>
+			<div class="med3">
+				<a href="#" class="fa fa-youtube"></a>
+				<p style="color: black; font-size: 18px; position: relative; top: -45px; left: 380px;">TheatrumTV</p>
+			</div>
+			<div class="med4">
+				<a href="#" class="fa fa-instagram"></a>
+				<p style="color: black; font-size: 18px; position: relative; top: -45px; left: 480px;">Theatrum_club</p>
+			</div>
+
+		</div>
+	</div>
+</center>		
+</body>
+</html>
